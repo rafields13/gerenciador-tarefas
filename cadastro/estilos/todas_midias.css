@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #00BFFF, #612DFD);
+    }
+
+    section#cadastro {
+        width: 80vw;
+        height: 240px;
+    }
+
+    section#cadastro > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#cadastro > div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #00BFFF, #612DFD);
+    }
+
+    section#cadastro {
+        width: 950px;
+        height: 280px;
+    }
+
+    section#cadastro > div#imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#cadastro > div#formulario {
+        float: left;
+        width: 50%;
+    }
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+        margin: 20px 0px;
+    }
+}
