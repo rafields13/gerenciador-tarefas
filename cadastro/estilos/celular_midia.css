@@ -27,7 +27,7 @@ section#cadastro {
 
     background-color: white;
     width: 250px;
-    height: 440px;
+    height: 520px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
 
@@ -80,7 +80,7 @@ div.campo > i {
 }
 
 div.campo > input {
-    background-color: #5dc5c1;
+    background-color: #68ddd9;
     font-size: 1em;
     width: calc(100% - 44px);
     height: 100%;
