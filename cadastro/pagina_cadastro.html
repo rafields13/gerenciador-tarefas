@@ -20,12 +20,12 @@
                         <form action="cadastro.php" method="post" autocomplete="on">
                             <div class="campo">
                                 <i class="material-icons">person</i>
-                                <input type="name" name="usuario" id="iusuario" placeholder="seu nome de usuário" autocomplete="name" required maxlength="16">
+                                <input type="text" name="usuario" id="iusuario" placeholder="seu nome de usuário (sem espaços em branco)" autocomplete="nickname" required minlength="3" maxlength="16" pattern="^[^\s]+$">
                                 <label for="iusuario">Nome do usuário</label>
                             </div>
                             <div class="campo">
                                 <i class="material-icons">mail</i>
-                                <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                                <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required maxlength="30" pattern="^[^\s]+$">
                                 <label for="iemail">E-mail do usuário</label>
                             </div>
                             <div class="campo">
