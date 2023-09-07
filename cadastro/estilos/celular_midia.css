@@ -93,18 +93,25 @@ div.campo > input:focus-within {
     background-color: white;
 }
 
-form > input[type=submit] {
+/*Botão bloqueado*/
+form > button {
     display: block;
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: #49A09D;
+    background-color: #6d6d6d6d;
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: not-allowed;
+}
+
+/*É pra isto acontecer quando as condições forem atendidas e o botão for liberado*/
+/* form > button {
+    background-color: #49A09D;
     cursor: pointer;
 }
 
-form > input[type=submit]:hover {
+form > button:hover {
     background-color: #316D6B;
-}
+} */

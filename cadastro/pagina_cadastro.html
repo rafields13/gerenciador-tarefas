@@ -1,47 +1,44 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Cadastro</title>
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <link rel="stylesheet" href="estilos/celular_midia.css">
-            <link rel="stylesheet" href="estilos/todas_midias.css" media="all">
-        </head>
-        <body>
-            <main>
-                <section id="cadastro">
-                    <div id="imagem">
-                        <!--Imagem-->
-                    </div>
-                    <div id="formulario">
-                        <h1>Cadastro</h1>
-                        <p>Se organize com a gente! Efetue seu cadastro :)</p>
-                        <form action="cadastro.php" method="post" autocomplete="on">
-                            <div class="campo">
-                                <i class="material-icons">person</i>
-                                <input type="text" name="usuario" id="iusuario" placeholder="seu nome de usuário (sem espaços em branco)" autocomplete="nickname" required minlength="3" maxlength="16" pattern="^[^\s]+$">
-                                <label for="iusuario">Nome do usuário</label>
-                            </div>
-                            <div class="campo">
-                                <i class="material-icons">mail</i>
-                                <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required maxlength="30" pattern="^[^\s]+$">
-                                <label for="iemail">E-mail do usuário</label>
-                            </div>
-                            <div class="campo">
-                                <i class="material-icons">vpn_key</i>
-                                <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
-                                <label for="isenha">Senha</label>
-                            </div>
-                            <div class="campo">
-                                <i class="material-icons">vpn_key</i>
-                                <input type="password" name="senha" id="isenha" placeholder="confirme sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
-                                <label for="isenha">Confirmar senha</label>
-                            </div>
-                            <input type="submit" value="Cadastrar">
-                        </form>
-                    </div>
-                </section>
-            </main>
-        </body>
-    </html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="estilos/celular_midia.css">
+        <link rel="stylesheet" href="estilos/todas_midias.css" media="all">
+    </head>
+    <body>
+        <main>
+            <section id="cadastro">
+                <div id="imagem">
+                    <!--Imagem-->
+                </div>
+                <div id="formulario">
+                    <h1>Cadastro</h1>
+                    <p>Se organize com a gente! Efetue seu cadastro :)</p>
+                    <form action="cadastro.php" method="post" autocomplete="on">
+                        <div class="campo">
+                            <i class="material-icons">person</i>
+                            <input type="text" name="usuario" id="iusuario" onchange="validar_nome_usuario()" placeholder="seu nome de usuário" autocomplete="nickname">
+                        </div>
+                        <div class="campo">
+                            <i class="material-icons">mail</i>
+                            <input type="email" name="email" id="iemail" onchange="validar_email()" placeholder="seu e-mail" autocomplete="email">
+                        </div>
+                        <div class="campo">
+                            <i class="material-icons">vpn_key</i>
+                            <input type="password" name="senha" id="isenha" onchange="validar_senha()" placeholder="sua senha" autocomplete="current-password">
+                        </div>
+                        <div class="campo">
+                            <i class="material-icons">vpn_key</i>
+                            <input type="password" name="senha" id="iconfirmarsenha" onchange="validar_confirmar_senha()" placeholder="confirme sua senha" autocomplete="current-password">
+                        </div>
+                        <button type="submit" onchange="habilitar_botao()" disabled>Cadastrar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src="validacoes.js"></script>
+</html>
