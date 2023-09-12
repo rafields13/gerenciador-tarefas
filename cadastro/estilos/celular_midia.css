@@ -106,12 +106,12 @@ form > button {
     cursor: not-allowed;
 }
 
-/*É pra isto acontecer quando as condições forem atendidas e o botão for liberado*/
-/* form > button {
+
+.botao_cadastro {
     background-color: #49A09D;
     cursor: pointer;
 }
 
-form > button:hover {
+.botao_cadastro:hover {
     background-color: #316D6B;
-} */
+}
