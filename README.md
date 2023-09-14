@@ -32,9 +32,9 @@ Um aplicativo web que permite aos usuários criar, editar, organizar e visualiza
 
 ### Conexão com Banco de Dados MySQL:
 
-- Use PHP para criar APIs para interagir com o Banco de Dados MySQL.
-- Armazene as informações de usuário (nome de usuário e senha criptografada) em uma tabela de usuários.
-- Armazene as informações das tarefas (título, descrição, data de criação, data de prazo e status) em uma tabela de tarefas.
+- PHP para criar APIs para interagir com o Banco de Dados MySQL.
+- Armazenar as informações de usuário (nome de usuário e senha criptografada) em uma tabela de usuários.
+- Armazenar as informações das tarefas (título, descrição, data de criação, data de prazo e status) em uma tabela de tarefas.
 - As APIs devem permitir o cadastro, login, consulta, criação, edição e exclusão de tarefas.
 
 ## Tecnologias Utilizadas:
