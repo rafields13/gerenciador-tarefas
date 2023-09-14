@@ -8,7 +8,7 @@ Um aplicativo web que permite aos usuários criar, editar, organizar e visualiza
 
 ### Página de Cadastro e Login:
 
-- Os usuários podem se cadastrar usando um nome de usuário e senha.
+- Os usuários podem se cadastrar usando um nome de usuário, e-mail e senha.
 - Os usuários podem fazer login usando suas credenciais.
 
 ### Página de Lista de Tarefas:
