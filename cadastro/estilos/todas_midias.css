@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
-        background-image: linear-gradient(to top, #00BFFF, #612DFD);
+        background-image: linear-gradient(to top, #00bfff, #612dfd);
     }
 
     section#cadastro {
@@ -19,12 +19,13 @@
     section#cadastro > div#formulario {
         float: right;
         width: 70%;
+        height: 320px;
     }
 }
 
 @media screen and (min-width: 992px) {
     body {
-        background-image: linear-gradient(to top, #00BFFF, #612DFD);
+        background-image: linear-gradient(to top, #00bfff, #612dfd);
     }
 
     section#cadastro {
@@ -41,6 +42,7 @@
     section#cadastro > div#formulario {
         float: left;
         width: 50%;
+        height: 360px;
     }
 
     div#formulario > h1 {

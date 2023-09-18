@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cadastro</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="estilos/celular_midia.css">
-        <link rel="stylesheet" href="estilos/todas_midias.css" media="all">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="estilos/celular_midia.css" />
+        <link rel="stylesheet" href="estilos/todas_midias.css" media="all" />
     </head>
     <body>
         <main>
             <section id="cadastro">
-                <div id="imagem">
-                    <!--Imagem-->
-                </div>
+                <div id="imagem"><!--Divisória para a imagem--></div>
                 <div id="formulario">
                     <h1>Cadastro</h1>
                     <p>Se organize com a gente! Efetue seu cadastro :)</p>
                     <form action="cadastro.php" method="post" autocomplete="on">
                         <div class="campo">
                             <i class="material-icons">person</i>
-                            <input type="text" name="usuario" id="iusuario" placeholder="seu nome de usuário" autocomplete="nickname">
+                            <input type="text" name="usuario" id="iusuario" placeholder="seu nome de usuário" autocomplete="name" />
                         </div>
+                        <span id="msg_erro_nome_usuario" style="display: none;"></span>
                         <div class="campo">
                             <i class="material-icons">mail</i>
-                            <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email">
+                            <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" />
                         </div>
+                        <span id="msg_erro_email" style="display: none;"></span>
                         <div class="campo">
                             <i class="material-icons">vpn_key</i>
-                            <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password">
+                            <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" />
                         </div>
+                        <span id="msg_erro_senha" style="display: none;"></span>
                         <div class="campo">
                             <i class="material-icons">vpn_key</i>
-                            <input type="password" name="senha" id="iconfirmarsenha" placeholder="confirme sua senha" autocomplete="current-password">
+                            <input type="password" name="senha" id="iconfirmarsenha" placeholder="confirme sua senha" autocomplete="current-password" />
                         </div>
+                        <span id="msg_erro_confirmar_senha" style="display: none;"></span>
                         <button id="botao_cadastro" type="submit" onchange="habilitar_botao()" disabled>Cadastrar</button>
                     </form>
                 </div>
